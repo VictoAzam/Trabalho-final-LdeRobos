@@ -4,7 +4,7 @@ class Robo:
     nivel_critico = 0.60
 
     def __init__(self, nome: str):
-        self._nome = nome.split('-')[0]  # Considera só a primeira parte do nome
+        self._nome = nome.split('-')[0]  
         self._vida = random.uniform(0, 1)
 
     @property
@@ -13,7 +13,7 @@ class Robo:
 
     @nome.setter
     def nome(self, valor):
-        self._nome = valor.split('-')[0]  # Garantir que o nome mantenha o padrão
+        self._nome = valor.split('-')[0]  #Nome Padrao
 
     @property
     def vida(self):
@@ -39,9 +39,12 @@ class Robo:
 
     def desenhar_robozinho(self):
         return """
-  [---]
- ( o o )
-  | O |
- /|   |\\
-  /\\_/\\ 
+      \_/      
+     (* *)     
+    __)#(__    
+   ( )...( )  (_)
+   || |_| ||  // 
+>==() | | () /  
+    _(___)_    
+   [-]   [-]Robo
 """
